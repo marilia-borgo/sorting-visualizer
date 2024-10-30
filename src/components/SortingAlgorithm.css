@@ -1,0 +1,18 @@
+.sorting-algorithm {
+    text-align: center;
+  }
+  
+  .array-container {
+    display: flex;
+    align-items: flex-end;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .array-bar {
+    width: 20px;
+    margin: 0 5px;
+    background-color: #3498db;
+    transition: height 0.3s ease;
+  }
+  
