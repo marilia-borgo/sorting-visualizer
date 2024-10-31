@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #8a3fab; /* Cor de fundo da página */
+  color: #fff; /* Cor do texto */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh; /* Altura total da janela */
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.tabs {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.tab {
+  background-color: #90e0e0; /* Cor de fundo dos botões */
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tab:hover {
+  background-color: #ade8f4; /* Cor ao passar o mouse */
+}
+
+.tab.active {
+  background-color: #0077b6; /* Cor do botão ativo */
+}
+
+.algorithm-container {
+  width: 100%;
+  height: 100%;
+  background-color: #00b4d8; /* Cor de fundo da área do algoritmo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden; /* Para garantir que nada extrapole a área */
+  position: relative; /* Para aplicar fundo */
+}
+
+.algorithm-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://i.pinimg.com/564x/02/3c/27/023c27c36d7d36a44ba34e612c3f1e20.jpg'); /* Coloque a URL da imagem aqui */
+  background-size: cover; /* Cobrir toda a área */
+  z-index: -1; /* Colocar a imagem atrás do conteúdo */
 }

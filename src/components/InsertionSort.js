@@ -29,7 +29,6 @@ const InsertionSort = () => {
     <div
         className="sorting-algorithm"
         style={{
-          backgroundImage: `url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Strawberries.jpg/1200px-Strawberries.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
       }}

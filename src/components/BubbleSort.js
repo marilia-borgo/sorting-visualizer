@@ -27,9 +27,9 @@ const BubbleSort = () => {
 
   return (
     <div
-      className="sorting-algorithm"
+      className="sorting-algorithm full-screen"
       style={{
-        backgroundImage: `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRICUO4LWUBzM6FVb6vhTWAFn07FyR1ZChm2A&s')`,
+        backgroundImage: `url('https://example.com/bubble-sort-bg.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
@@ -40,7 +40,7 @@ const BubbleSort = () => {
             key={idx}
             className="array-bar"
             style={{
-              height: `${value}px`,
+              height: `${value}%`,
               backgroundColor: activeIndices.includes(idx) ? '#FF6347' : '#3498db',
             }}
           ></div>
