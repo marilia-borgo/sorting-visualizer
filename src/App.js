@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import BubbleSort from './components/BubbleSort';
 import InsertionSort from './components/InsertionSort';
 import SelectionSort from './components/SelectionSort';
 import MergeSort from './components/MergeSort';
+import ShellSort from './components/ShellSort';
+import QuickSort from './components/QuickSort';
+
 import './App.css';
 
 const App = () => {
@@ -10,16 +12,18 @@ const App = () => {
 
   const renderAlgorithm = () => {
     switch (activeAlgorithm) {
-      case 'Bubble Sort':
-        return <BubbleSort />;
-      case 'Insertion Sort':
-        return <InsertionSort />;
       case 'Selection Sort':
         return <SelectionSort />;
+      case 'Insertion Sort':
+        return <InsertionSort />;
       case 'Merge Sort':
         return <MergeSort />;
+      case 'Shell Sort':
+        return <ShellSort />;
+      case 'Quick Sort':
+        return <QuickSort />;
       default:
-        return <BubbleSort />;
+        return <InsertionSort />;
     }
   };
 
@@ -28,7 +32,7 @@ const App = () => {
       <header className="header">
         <h1>──💻‧₊˚🖇️ Algorithm Visualizer ₊˚🎧⊹♡💾── </h1>
         <nav className="tabs">
-          {['Bubble Sort', 'Selection Sort', 'Insertion Sort', 'Merge Sort'].map((algorithm) => (
+          {[ 'Selection Sort', 'Insertion Sort', 'Merge Sort', 'Shell Sort', 'Quick Sort'].map((algorithm) => (
             <button
               key={algorithm}
               className={`tab ${activeAlgorithm === algorithm ? 'active' : ''}`}
@@ -39,7 +43,7 @@ const App = () => {
           ))}
         </nav>
       </header>
-      <div className="algorithm-container">
+      <div className={`algorithm-container ${activeAlgorithm.replace(" ", "-").toLowerCase()}`}>
         {renderAlgorithm()}
       </div>
     </div>
