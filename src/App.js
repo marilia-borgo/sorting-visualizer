@@ -6,6 +6,7 @@ import ShellSort from './components/ShellSort';
 import QuickSort from './components/QuickSort';
 
 import './App.css';
+import LandingPage from './components/landingPage';
 
 const App = () => {
   const [activeAlgorithm, setActiveAlgorithm] = useState('Bubble Sort');
@@ -23,7 +24,7 @@ const App = () => {
       case 'Quick Sort':
         return <QuickSort />;
       default:
-        return <InsertionSort />;
+        return <LandingPage />;
     }
   };
 

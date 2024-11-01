@@ -40,13 +40,13 @@ const InsertionSort = () => {
             className="array-bar"
             style={{
               height: `${value}px`,
-              backgroundColor: idx === activeIndex ? '#FF6347' : '#3498db',
+              backgroundColor: idx === activeIndex ? '#4b1535' : '#90e0e0',
             }}
           ></div>
         ))}
       </div>
-      <button onClick={insertionSort}>Ordenar</button>
-      <button onClick={() => { setArray(generateRandomArray(10)); setActiveIndex(null); }}>Gerar Novo Array</button>
+      <button className='buttons-visualizer' onClick={insertionSort}>Ordenar</button>
+      <button className='buttons-visualizer' onClick={() => { setArray(generateRandomArray(10)); setActiveIndex(null); }}>Gerar Novo Array</button>
     </div>
   );
 };

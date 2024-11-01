@@ -12,7 +12,24 @@
   .array-bar {
     width: 20px;
     margin: 0 5px;
-    background-color: #3498db;
+    background-color: #90e0e0;
     transition: height 0.3s ease;
   }
+
+  .buttons-visualizer{
+    font-size: 1.2rem;
+    color: white;
+    background-color: #4b1535;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background 0.3s;
+    border-color: #4b153500;
+    margin: 8px;
+  }
+  
+  .buttons-visualizer:hover {
+    background-color: #90e0e0;
+  }
+  
   
