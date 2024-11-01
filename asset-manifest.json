@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/sorting-visualizer/static/css/main.7c6cfa6b.css",
+    "main.js": "/sorting-visualizer/static/js/main.ebb55f9d.js",
+    "static/js/453.c190135e.chunk.js": "/sorting-visualizer/static/js/453.c190135e.chunk.js",
+    "static/media/quick-sort.svg": "/sorting-visualizer/static/media/quick-sort.175b53f9d7e04648774a.svg",
+    "static/media/merge-sort.svg": "/sorting-visualizer/static/media/merge-sort.873be5318b282c56ca9d.svg",
+    "static/media/selection-sort.svg": "/sorting-visualizer/static/media/selection-sort.afe7603c4336e67b3753.svg",
+    "static/media/shell-sort.svg": "/sorting-visualizer/static/media/shell-sort.92a0609c1cdbd1e7a719.svg",
+    "static/media/insertion-sort.svg": "/sorting-visualizer/static/media/insertion-sort.5cf88e035e0630cb16bc.svg",
+    "index.html": "/sorting-visualizer/index.html",
+    "main.7c6cfa6b.css.map": "/sorting-visualizer/static/css/main.7c6cfa6b.css.map",
+    "main.ebb55f9d.js.map": "/sorting-visualizer/static/js/main.ebb55f9d.js.map",
+    "453.c190135e.chunk.js.map": "/sorting-visualizer/static/js/453.c190135e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c6cfa6b.css",
+    "static/js/main.ebb55f9d.js"
+  ]
+}
