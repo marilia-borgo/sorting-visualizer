@@ -5,7 +5,7 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <h1>Bem-vindo ao Algorithm Visualizer! (≧◡≦) ♡</h1>
-      <p>Explore os algoritmos de ordenação clicanado nas abas acima! (=^･ω･^=)</p>
+      <p>Explore os algoritmos de ordenação clicando nas abas acima! (=^･ω･^=)</p>
       <p>Me siga nas minhas redes:</p>
       <div className="links">
         <a
